@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="code2.css" type="text/css">
+<script type="text/javascript" src="jquery.1.6.4.min.js"></script>
+</head>
+<body>
+<div>
+	<div>one</div>
+	<div>two</div>
+	<div>three</div>
+</div>
+<div>
+	<div>one</div>
+	<div>two</div>
+	<div>three</div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+$( function(){
+	$('body div div').css({ border: '1px solid black', float: 'left', width:'33%'});
+	$('body').children('div').append('<div style="clear:both;"></div>');
+});
+</script>
+</html>
